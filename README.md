@@ -60,7 +60,7 @@ If unsure → ask before changing shared files
 
 **Code Standards**
 HTML Standards
-- Use proper structure (<header>, <section>, <footer>)
+- Use proper structure 
 - Keep code clean and readable
 - Use indentation consistently
 - Avoid unnecessary complexity
