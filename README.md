@@ -105,16 +105,6 @@ Only used if required (e.g. calculator)
 
 If unsure → do not use JavaScript
 
-**Linking Rules**
-
-Since all pages are in the root folder:
-
-"<a href="login.html">"
-
-CSS:
-
-"<link rel="stylesheet" href="css/styles.css">"
-
 **Final Integration Process**
 At the end of development:
 
