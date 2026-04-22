@@ -17,20 +17,17 @@ Minimal JavaScript (only if necessary, have to clarify if we are allowed to.)
 
 All core pages are stored in the root directory for simplicity:
 
-
-├── index.html
-├── login.html
-├── dashboard.html
-├── calculator.html
-├── resources.html
-├── alerts.html
-│
-├── css/
-│   └── styles.css
-│
-├── assets/
-│   ├── images/
-│   └── icons/
+- index.html
+- login.html
+- dashboard.html
+- calculator.html
+- resources.html
+- alerts.html
+- css/
+  - styles.css
+- assets/
+  - images/
+  - icons/
 
 **Team Workflow**
 Development Approach
