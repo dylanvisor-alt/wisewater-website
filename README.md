@@ -34,12 +34,11 @@ Development Approach
 
 Each team member is responsible for one specific part/page of the website.
 
-_Assignment Strategy:_
-
-Work individually on your assigned page
-Focus on structure first, then styling
-Upload your work when your section is complete
-At the end, one person will merge and clean everything
+**Assignment Strategy:**
+- Work individually on your assigned page
+- Focus on structure first, then styling
+- Upload your work when your section is complete
+- At the end, one person will merge and clean everything
 
 **Page Responsibilities (Example Split)**
 - index.html → Landing page
@@ -96,14 +95,12 @@ Focus on:
 - Visual hierarchy
 - Clean layout
 
-JavaScript Usage
-
+**JavaScript Usage**
 JavaScript should be:
 
-Minimal
-Only used if required (e.g. calculator)
-
-If unsure → do not use JavaScript
+- Minimal
+- Only used if required (e.g. calculator)
+- If unsure → do not use JavaScript
 
 **Final Integration Process**
 At the end of development:
