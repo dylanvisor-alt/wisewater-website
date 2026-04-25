@@ -17,6 +17,16 @@ html, body {
     color: white;
 }
 
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
 .nav a {
     color: white;
     text-decoration: none;
@@ -123,4 +133,69 @@ html, body {
 
 .btn:hover {
     background: #005ecb; 
+}
+
+.support-page {
+    padding: 60px 40px;
+}
+
+.support-hero {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+}
+
+.support-hero h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.support-hero p {
+    color: #555;
+}
+
+.support-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.support-card {
+    background: white;
+    padding: 30px;
+    width: 400px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.support-card h3 {
+    margin-top: 0;
+}
+
+.support-card p {
+    color: #555;
+}
+
+.support-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.support-form label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.support-form input,
+.support-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.support-form textarea {
+    resize: vertical;
 }
