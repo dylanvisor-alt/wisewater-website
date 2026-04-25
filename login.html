@@ -1,36 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link href="login_style.css" rel="stylesheet" />
-    
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Login | WiseWater</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
 <body>
-    <main id="page">
-        <div class="login">
-            <h1>Login</h1>
-            <p>Enter your account details</p>
-            Username<input type="Username" value=""/> <!--I plan on having the feature where the username display is also the input -->
-            <br>Password<input type="Password" value=""/><br><br>
-            <a href=".login.html">Forgot Password?</a></p> <!-- .login.html is a temp link to forgot password page? (Might use a button instead) -->
-            <button>Login</button> <!--Will work on making buttons look better later-->
-            <br><br>
-            <div class="signup">
-            <p>Don't have an account?</p> <br> <button>Sign up</button>   <!-- Will format button later-->
+    <nav class="nav">
+        <h1 class="logo">WiseWater</h1>
+        <a href="index.html">Home</a>
+    </nav>
+
+    <main class="login-page">
+        <section class="login-left">
+            <div class="login-box">
+                <h2>Login</h2>
+                <p class="login-subtext">Water Usage Dashboard</p>
+
+                <form>
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter Email Here" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="Enter Password Here" required>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="forgot-btn">Forgot Password?</button>
+                        <button type="submit" class="btn">Login</button>
+                    </div>   
+
+                </form>
             </div>
-        </div>
 
-        <div class="welcome">
-            <h1><em>Welcome to</em><br>WiseWater</h1>
-            <p>Login to access your account</p>
-            <!--I have no clue how to get the image working, initially it worked when I copied via discord chat but now it doesnt.-->
-            <img src="https://cdn.discordapp.com/attachments/1481403521747128361/1496771382627930273/Water_Logo.jpg?ex=69eb187a&is=69e9c6fa&hm=2fadfcc5d9b4780d6d42e58fec60ce315af592d73e93072bd561035fa96a3f10&"/>
-        </div>
+            <div class="signup-card">
+                <p>Don't have an account?</p>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </section>
+
+        <section class="login-right">
+            <div class="welcome-card">
+                <h1><em>Welcome to</em><br>WiseWater</h1>
+                <p>Login to access your dashboard</p>
+            </div>
+        </section>
     </main>
-
+    
 
 </body>
 </html>
