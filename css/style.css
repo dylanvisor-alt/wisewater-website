@@ -189,9 +189,9 @@ html, body {
 
 .btn {
     background: #007aff;
+    border: 1px solid #004aff;
     color: white;
     padding: 10px 18px;
-    border: none;
     border-radius: 5px;
     cursor: pointer;
 }
