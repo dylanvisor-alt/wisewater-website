@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+        <title>Login | WiseWater</title>
+        <link rel="stylesheet" href="css/style.css">
+  </head>
 
+  <body>
+    <nav class="nav">
+        <h1 class="logo">WiseWater</h1>
+
+        <div class="nav-links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="calculator.html">Calculator</a>
+            <a href="resources.html">Resources</a>
+            <a href="alerts.html">Support</a>
+            <a href="index.html">Logout</a>
+        </div>
+    </nav>
+    
+    <div class="dashboard-main">
+      <section class="dashboard-left">
+        
+        <div class="dashboard-card-top">
+          <div class="dashboard-left-content">
+            <h1>[Name]'s Dashboard</h1>
+            <p>Heres a snapshot of your household's current water usage. Use the tools below to explore your habits and learn how to save!</p>
+            <br>
+          </div>
+
+          <div class="dashboard-left-nav">
+            <!--will link to dif pages-->
+            <a href="dashboard.html" class="btn">My Usage History</a>
+            <a href="dashboard.html" class="btn">Get Saving Tips</a>
+          </div>
+        </div>
+        <div class="dashboard-card-bottom">
+          <div class="dashboard-left-content-2">
+            <h3>Usage Summary</h3>
+            <p>Your household used <strong>[X]L this week - [X]% above the SEQ average.</strong></p>
+            <br>
+            <h3>Quick Alerts</h3>
+            <p>[most recent notification]</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="dashboard-right">
+        <div class="chart-card">
+
+          <!--Buttons section - will replace graphs based on user interaction using radio buttons & display: none; -->
+          <div class="chart-buttons">
+            <input type="radio" name="chart-type" id="weekly-view">
+            <label for="weekly-view" class="chart-button">Weekly</label>
+            <input type="radio" name="chart-type" id="seq-view">
+            <label for="seq-view" class="chart-button">SEQ Average</label>
+          </div>
+
+
+
+
+          <h1>Weekly Water Usage</h1>
+          <div class="chart-bar-group">
+            <!--using divs to hardcode bar chart w/o java-->
+            <!--applying unique height styles in html so we dont have to individually style each in css-->
+            <div class="bar-label-group">
+              <div class="chart-bar" style="height:60%"></div>
+              <span class="chart-label">Mon</span>
+            </div>
+            <div class="bar-label-group">
+              <div class="chart-bar" style="height:70%"></div>
+              <span class="chart-label">Tue</span>
+            </div>
+            <div class="bar-label-group">
+              <div class="chart-bar" style="height:40%"></div>
+              <span class="chart-label">Wed</span>
+            </div>
+            <div class="bar-label-group">
+              <div class="chart-bar" style="height:20%"></div>
+              <span class="chart-label">Thu</span>
+            </div>
+            <div class="bar-label-group">
+              <div class="chart-bar" style="height:60%"></div>
+              <span class="chart-label">Fri</span>
+            </div>
+            <div class="bar-label-group">
+              <div class="chart-bar" style="height:10%"></div>
+              <span class="chart-label">Sat</span>
+            </div>
+            <div class="bar-label-group">
+              <div class="chart-bar" style="height:80%"></div>
+              <span class="chart-label">Sun</span>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+    </div>
+
+  </body>
+</html>
