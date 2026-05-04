@@ -274,3 +274,126 @@ html, body {
 .support-form textarea {
     resize: vertical;
 }
+
+/*-----------------------Dashboard CSS (Start)-----------------------*/
+
+.dashboard-main {
+  display: flex;
+  flex-direction: row;
+}
+
+.dashboard-left {
+  /*need to change width to adjust with window size*/
+  min-width: 460px;
+  max-width: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 40px;
+  box-sizing: border-box;
+  background: #f5f7fa
+}
+
+.dashboard-card-top {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.dashboard-left-content h1{
+  font-size: 28px;
+  margin-top: 0;
+}
+
+.dashboard-left p{
+  color: #555;
+  font-size: 15px;
+}
+
+.dashboard-left-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.dashboard-left-nav .btn{
+  white-space: nowrap;
+}
+
+.dashboard-card-bottom {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.dashboard-left-content-2 h3 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.dashboard-right{
+  min-width: 800px;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 40px;
+  box-sizing: border-box;
+  background: #f5f7fa
+}
+
+.chart-card {
+  background: white;
+  
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  
+}
+
+.chart-bar {
+  /* colour subject to change */
+  background: red;
+  width: 30px;
+  border-radius: 6px 6px 0 0;
+}
+
+.chart-label{
+  color: #555;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.bar-label-group{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; /*pushing group down*/
+  height: 100%;
+  
+}
+
+.chart-bar-group {
+  display: flex;
+  height: 415px;
+  align-items: flex-end; 
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.chart-card h1 {
+  font-size: 28px;
+  text-align: center;
+}
+
+.chart-button {
+  /*move below chart*/
+}
+
+/*-----------------------Dashboard CSS (end)-----------------------*/
