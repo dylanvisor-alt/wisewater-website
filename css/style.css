@@ -284,8 +284,7 @@ html, body {
 
 .dashboard-left {
   /*need to change width to adjust with window size*/
-  min-width: 460px;
-  max-width: 460px;
+  width: 460px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -337,8 +336,8 @@ html, body {
 }
 
 .dashboard-right{
-  min-width: 800px;
-  max-width: 900px;
+  width: calc(70vw - 80px);
+  min-width: 550px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -359,7 +358,7 @@ html, body {
 .chart-bar {
   /* colour subject to change */
   background: red;
-  width: 30px;
+  width: 3vw;
   border-radius: 6px 6px 0 0;
 }
 
@@ -392,8 +391,41 @@ html, body {
   text-align: center;
 }
 
-.chart-button {
-  /*move below chart*/
+.chart-labels {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+  
+}
+
+.chart-labels .btn {
+  min-width: 120px;
+  text-align: center;
+}
+
+/*radio button content switching (~ selects all siblings)*/
+
+/*no charts display by default*/
+#weekly-chart, #seq-chart{
+  display: none;
+}
+
+/*eg. if weekly view button is in checked state, selects all siblings with id '#weekly chart' & changes display state from none to block. (note: children keep flex display state)*/
+#weekly-view:checked ~ #weekly-chart, #seq-view:checked ~ #seq-chart{
+  display: block;
+}
+
+/*hide radio buttons - only labels visible & clickable*/
+#weekly-view, #seq-view {
+  display: none;
+}
+
+/*change colour of active button*/
+/*.chart-labels is the sibling, had to select it to select children*/
+#weekly-view:checked ~ .chart-labels #weekly-label, #seq-view:checked ~ .chart-labels #seq-label{
+  background: #749bed;
+  border-color: #507cd9;
 }
 
 /*-----------------------Dashboard CSS (end)-----------------------*/
