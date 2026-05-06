@@ -1,2 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator | WiseWater</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
-dddddddddddddddddddddd
+<body>
+    <nav class="nav">
+        <h1 class="logo">WiseWater</h1>
+
+        <div class="nav-links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="calculator.html">Calculator</a>
+            <a href="resources.html">Resources</a>
+            <a href="alerts.html">Support</a>
+            <a href="index.html">Logout</a>
+        </div>
+    </nav>
+
+    <main class="calculator-page">
+
+        <section class="calculator-hero">
+            <h2>Water Usage Calculator</h2>
+            <p>Answer a few simple questions to estimate your household water usage.</p>
+        </section>
+
+        <section class="calculator-card">
+            <div class="calculator-step">
+                <p class="step-title">Household</p>
+
+                <h3>How many people are in your household?</h3>
+
+                <div class="people-controls">
+                    <button type="button" class="circle-btn">-</button>
+
+                    <div class="person-count">
+                        <span class="person-icon">👤</span>
+                        <p>1 Person</p>
+                    </div>
+
+                    <button type="button" class="circle-btn">+</button>
+                </div>
+
+                <button type="button" class="btn">Next</button>
+            </div>
+        </section>
+
+        <section class="calculator-progress">
+            <div class="progress-step active">Start</div>
+            <div class="progress-step">Indoor Water</div>
+            <div class="progress-step">Outdoor Water</div>
+            <div class="progress-step">Virtual Water</div>
+            <div class="progress-step">Finish</div>
+        </section>
+
+    </main>
+    
+</body>
+</html>
