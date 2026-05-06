@@ -429,3 +429,117 @@ html, body {
 }
 
 /*-----------------------Dashboard CSS (end)-----------------------*/
+
+/* Calculator stuff start - Jack */
+
+.calculator-page {
+    padding: 60px 40px;
+    min-height: calc(100vh - 80px);
+    background: white; 
+    text-align: center;
+}
+
+.calculator-hero {
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+}
+
+.calculator-hero h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.calculator-hero p {
+    color: #555;
+}
+
+.calculator-card {
+    background: white;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.step-title {
+    color: #007aff; 
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.calculator-step h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.people-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.circle-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #007aff;
+    background: white;
+    color: #007aff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.circle-btn:hover {
+    background: #e6f0ff; 
+}
+
+.person-icon {
+    font-size: 45px;
+}
+
+.person-count p {
+    margin-top: 8px;
+    color: #007aff;
+    font-weight: bold;
+}
+
+
+.calculator-step .btn {
+    margin-top: 10px;
+}
+
+/* progress bar */
+.calculator-progress {
+    display: flex;
+    justify-content: center;
+    margin: 60px auto 0 auto;
+    max-width: 900px;
+}
+
+.progress-step {
+    flex: 1;
+    background: #e6f0ff; 
+    color: #007aff;
+    padding: 14px;
+    font-size: 12px;
+    font-weight: bold;
+    border-right: 1px solid #cce0ff;
+}
+
+.progress-step.active {
+    background: #007aff;
+    color: white;
+}
+
+.progress-step:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+.progress-step:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+/* Calculator stuff end - Jack */
