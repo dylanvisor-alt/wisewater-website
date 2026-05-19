@@ -232,7 +232,23 @@ html, body {
     justify-content: center;
     align-items: center;
     background: #007aff;
-    border: 1px solid #007aff;
+    text-decoration: none;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+.btn:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0066ff;
+    text-decoration: none;
+    border: none;
     color: white;
     padding: 10px 18px;
     border-radius: 5px;
@@ -759,9 +775,8 @@ html, body {
 }
 
 .feature-icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 15px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0px;
     filter: brightness(0);
-
 }
