@@ -399,7 +399,7 @@ html, body {
 
 .chart-bar {
   /* colour subject to change */
-  background: red;
+  background: #007aff;
   width: 3vw;
   border-radius: 6px 6px 0 0;
 }
@@ -446,6 +446,21 @@ html, body {
   text-align: center;
 }
 
+.comparison-bar-group {
+  display: flex;
+  align-items: flex-end;
+  height: 100%
+}
+
+.comparison-bar .chart-bar{
+  background: #83b9f9;
+}
+
+.comparison-bar {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
 /*radio button content switching (~ selects all siblings)*/
 
 /*no charts display by default*/
