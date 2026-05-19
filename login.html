@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Login | WiseWater</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Login | WiseWater</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
 <body>
     <main class="login-page">
@@ -17,7 +17,6 @@
                 <div class="welcome-card-text">
                     <h1>WiseWater</h1>
                 </div>
-
             </div>
 
             <div class="login-box">
@@ -33,50 +32,94 @@
                         <input type="password" placeholder="Password" required>
                     </div>
 
-                    <details class="forgot-password-section">
-                        <summary class="forgot-btn">Forgot Password?</summary>
-
-                        <div class="reset-password-input-group">
-                            <input type="email" placeholder="Enter email address">
-                            <button type="button" class="reset-submit-btn">Send</button>
-                        </div>
-                    </details>
+                    <a href="#forgot-popup" class="forgot-btn">Forgot Password?</a>
 
                     <div class="form-actions">
-                        <button type="submit" class="btn">Login</button>
+                        <button 
+                            type="button" 
+                            class="btn"
+                            onclick="window.location.href='dashboard.html'"
+                        >
+                            Login
+                        </button>
                     </div>   
-
                 </form>
             </div>
 
             <div class="signup-card">
                 <p>Don't have an account?</p>
-                <button class="signup-btn">Sign Up</button>
+                <a href="#signup-popup" class="signup-btn">Sign Up</a>
             </div>
         </section>
 
         <section class="login-right">
             <div class="carousel">
                 <div class="carousel-group">
-                    <div class="carousel-card"><img src="assets/Login_image1.jpeg"></div>
-                    <div class="carousel-card"><img src="assets/Login_image2.jpeg"></div>
-                    <div class="carousel-card"><img src="assets/Login_image3.jpeg"></div>
-                    <div class="carousel-card"><img src="assets/Login_image4.jpeg"></div>
-                    <div class="carousel-card"><img src="assets/Login_image5.jpeg"></div>
-                    <div class="carousel-card"><img src="assets/Login_image6.jpeg"></div>
+                    <div class="carousel-card"><img src="assets/Login_image1.jpeg" alt="Water saving image 1"></div>
+                    <div class="carousel-card"><img src="assets/Login_image2.jpeg" alt="Water saving image 2"></div>
+                    <div class="carousel-card"><img src="assets/Login_image3.jpeg" alt="Water saving image 3"></div>
+                    <div class="carousel-card"><img src="assets/Login_image4.jpeg" alt="Water saving image 4"></div>
+                    <div class="carousel-card"><img src="assets/Login_image5.jpeg" alt="Water saving image 5"></div>
+                    <div class="carousel-card"><img src="assets/Login_image6.jpeg" alt="Water saving image 6"></div>
                 </div>
-                <div aria-hidden class="carousel-group"> 
-                    <div class="carousel-card"><img src="assets/Login_image1.jpeg"></div>
-                    <div class="carousel-card"><img src="assets/Login_image2.jpeg"></div>
-                    <div class="carousel-card"><img src="assets/Login_image3.jpeg"></div>
-                    <div class="carousel-card"><img src="assets/Login_image4.jpeg"></div>
-                    <div class="carousel-card"><img src="assets/Login_image5.jpeg"></div>
-                    <div class="carousel-card"><img src="assets/Login_image6.jpeg"></div>
+
+                <div aria-hidden="true" class="carousel-group"> 
+                    <div class="carousel-card"><img src="assets/Login_image1.jpeg" alt=""></div>
+                    <div class="carousel-card"><img src="assets/Login_image2.jpeg" alt=""></div>
+                    <div class="carousel-card"><img src="assets/Login_image3.jpeg" alt=""></div>
+                    <div class="carousel-card"><img src="assets/Login_image4.jpeg" alt=""></div>
+                    <div class="carousel-card"><img src="assets/Login_image5.jpeg" alt=""></div>
+                    <div class="carousel-card"><img src="assets/Login_image6.jpeg" alt=""></div>
                 </div>
             </div>
         </section>
     </main>
-    
+
+    <div id="signup-popup" class="popup-overlay">
+        <div class="popup-box">
+            <a href="#" class="close-btn">×</a>
+
+            <h2>Create Account</h2>
+            <p>Enter your details below</p>
+
+            <form>
+                <div class="input-group">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" placeholder="Confirm Password" required>
+                </div>
+
+                <button type="submit" class="signup-submit-btn">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="forgot-popup" class="popup-overlay">
+        <div class="popup-box">
+            <a href="#" class="close-btn">×</a>
+
+            <h2>Reset Password</h2>
+            <p>Enter your email address below</p>
+
+            <form>
+                <div class="input-group">
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+
+                <button type="submit" class="reset-submit-btn">Send Reset Link</button>
+            </form>
+        </div>
+    </div>
 
 </body>
 </html>
