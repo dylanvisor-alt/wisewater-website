@@ -79,16 +79,7 @@ html, body {
     min-height: 100vh;
 }
 
-.login-left {
-    width: 40%;
-    background: #f5f7fa;
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-    gap: 200px;
-}
-
+/*Sign up*/
 .signup-card {
     display: flex;
     flex-direction: row;
@@ -103,60 +94,44 @@ html, body {
 }
 
 .signup-btn {
-    background: #007aff;
+    background: #2ce35a;
     color: white;
-    border: 1px solid #7ea1f8; 
+    border: 1px solid #2ce35a;
     padding: 10px 18px;
     border-radius: 6px;
     cursor: pointer;
 }
 
 .signup-btn:hover {
-    background: #52b3fd;
-    border-color: #004aff;
+    background: #29b44c;
+    border-color: #29b44c;
 }
 
-.login-right {
-    width: 60%;
-    background: white;
+/* Left side of Login Page */
+.login-left {
+    width: 40%;
+    background: #f5f7fa;
     display: flex;
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
-}
-
-.login-box,
-.welcome-card {
-    padding: 40px;
-    width: 340px;
-    border-radius: 16px;
-    text-align: center;
-}
-
-.welcome-card img{
-    max-height: 300px;
-}
-
-.login-box h1 {
-    /*Colour subject to change ("Login") */
-    margin: 0 0 10px 0;
-    text-align: left;
-    color: #007aff; 
-    font-size: 50px;
-}
-
-.login-subtext {
-    /*Colour subject to change ("Enter your account details") */
-    font-size: 14px;
-    color: #007aff;
-    margin-bottom: 25px;
-    text-align: left;
-    font-weight: bold;
+    gap: 20px;
 }
 
 .welcome-card {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
+    width: 500px; 
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 
 .welcome-card h1 {
@@ -165,9 +140,42 @@ html, body {
     margin: 0 0 10px 0;
 }
 
-.welcome-card p {
-    color: #555;
-    margin: 0 0 25px 0;
+.welcome-card img{
+    max-height: 75px;
+    width: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    flex-shrink: 0;
+    transform: translateY(-5px); /* To fix the alignment of logo and text */
+}
+
+/* Login Box */
+
+.login-box {
+    width: 340px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.login-box h1 {
+    /* Colour subject to change ("Login") */
+    margin: 0 0 10px 0;
+    text-align: center;
+    color: #007aff;  
+    font-size: 50px;
+}
+
+.login-subtext {
+    /* Colour subject to change ("Enter your account details") */
+    font-size: 14px;
+    color: #007aff;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .input-group {
@@ -186,7 +194,7 @@ html, body {
 }
 
 .input-group input {
-    /*Colour subject to change (The lines under email and password)*/
+    /* Colour subject to change (The lines under email and password)*/
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
@@ -199,13 +207,12 @@ html, body {
 }
 
 .input-group input:focus {
-    /*Removes the outline box when typing */
+    /* Removes the outline box when typing */
     outline: none;
 }
 
-.input-group input::placeholder
-{
-    color: #757575;;
+.input-group input::placeholder {
+    color: #000000;;
     font-weight: bold;
 }
 
@@ -233,6 +240,9 @@ html, body {
     font-weight: bold;
 }
 
+
+/* Forgot Password Button & Form */
+
 .forgot-btn {
     /*Colour subject to change (Forgot Password?) */
     background: none;
@@ -243,11 +253,84 @@ html, body {
     font-size: 13px;
     font-weight: bold;
     align-self: flex-start;
+    
+}
 
+.forgot-password-section summary {
+    list-style: none;
+    outline: none;
 }
 
 .forgot-btn:hover {
     background: #d9e8ff;
+}
+
+.reset-password-input-group input, input::placeholder {
+    color: #000000;;
+    font-weight: bold;
+}
+
+
+.reset-submit-btn {
+    background: #007aff;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #007aff;
+    border-color: #007aff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Right side of Login page */
+
+.login-right {
+    height: 100vh;
+    width: 60%;
+    background: white;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+/*Carousel Image*/
+
+.carousel {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden; /* Hides the scrollbar and other items outside the bounds */
+    align-items: stretch;
+    box-sizing: border-box;
+}
+
+.carousel-group {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    min-width: 100%;
+    animation: slide 30s infinite linear;
+    height: 100%;
+}
+
+.carousel-card {
+    flex: 0 0 1150px;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.carousel-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Carousel sliding animation */
+@keyframes slide {
+    from {translate: 0;}
+    to {translate: -100%;}
 }
 
 /*-----------------------Login CSS (end)-----------------------*/
