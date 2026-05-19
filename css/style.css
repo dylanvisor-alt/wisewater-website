@@ -757,3 +757,11 @@ html, body {
 .reset-submit-btn:hover {
     background: #FF8C00;
 }
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    filter: brightness(0);
+
+}
