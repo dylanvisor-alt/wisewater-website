@@ -3,19 +3,29 @@
     <head>
         <meta charset="UTF-8">
         <title>Login | WiseWater</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
 <body>
     <main class="login-page">
         <section class="login-left">
+            <div class="welcome-card">
+                <a href="index.html" class="logo">
+                    <img src="assets/WiseWater_Logo.png" alt="WiseWater Logo">
+                </a>
+                
+                <div class="welcome-card-text">
+                    <h1>WiseWater</h1>
+                </div>
+
+            </div>
+
             <div class="login-box">
                 <h1>Login</h1>
                 <p class="login-subtext">Enter your account details</p>
 
                 <form>
                     <div class="input-group">
-
                         <input type="email" placeholder="Email" required>
                     </div>
 
@@ -23,8 +33,16 @@
                         <input type="password" placeholder="Password" required>
                     </div>
 
+                    <details class="forgot-password-section">
+                        <summary class="forgot-btn">Forgot Password?</summary>
+
+                        <div class="reset-password-input-group">
+                            <input type="email" placeholder="Enter email address">
+                            <button type="button" class="reset-submit-btn">Send</button>
+                        </div>
+                    </details>
+
                     <div class="form-actions">
-                        <button type="button" class="forgot-btn">Forgot Password?</button>
                         <button type="submit" class="btn">Login</button>
                     </div>   
 
@@ -38,10 +56,23 @@
         </section>
 
         <section class="login-right">
-            <div class="welcome-card">
-                <h1><em>Welcome to</em><br>WiseWater</h1>
-                <p>Login to access your dashboard</p>
-                <a href="index.html"><img src="https://cdn.discordapp.com/attachments/1481403521747128361/1496771382627930273/Water_Logo.jpg?ex=6a022aba&is=6a00d93a&hm=7c85bdae02729989c2e8649725a8054448fa5cd9f95bdd179b5cbc0e9a530620&"</a>
+            <div class="carousel">
+                <div class="carousel-group">
+                    <div class="carousel-card"><img src="assets/Login_image1.jpeg"></div>
+                    <div class="carousel-card"><img src="assets/Login_image2.jpeg"></div>
+                    <div class="carousel-card"><img src="assets/Login_image3.jpeg"></div>
+                    <div class="carousel-card"><img src="assets/Login_image4.jpeg"></div>
+                    <div class="carousel-card"><img src="assets/Login_image5.jpeg"></div>
+                    <div class="carousel-card"><img src="assets/Login_image6.jpeg"></div>
+                </div>
+                <div aria-hidden class="carousel-group"> 
+                    <div class="carousel-card"><img src="assets/Login_image1.jpeg"></div>
+                    <div class="carousel-card"><img src="assets/Login_image2.jpeg"></div>
+                    <div class="carousel-card"><img src="assets/Login_image3.jpeg"></div>
+                    <div class="carousel-card"><img src="assets/Login_image4.jpeg"></div>
+                    <div class="carousel-card"><img src="assets/Login_image5.jpeg"></div>
+                    <div class="carousel-card"><img src="assets/Login_image6.jpeg"></div>
+                </div>
             </div>
         </section>
     </main>
